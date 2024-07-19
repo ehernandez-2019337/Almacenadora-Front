@@ -1,0 +1,151 @@
+/* Estilos de TaskView.jsx */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    white-space: normal;
+    border: none;
+    width: 100%;
+    min-width: 24rem;
+    max-width: 28rem;
+    margin: 10px;
+    padding: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.btn {
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-warning:hover,
+.btn-success:hover,
+.btn-danger:hover {
+    filter: brightness(85%);
+}
+
+.form-control {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #6c757d;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(108, 117, 125, 0.5);
+}
+
+.scroll-container {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #93b3e2;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    height: 75px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffdd57 !important;
+    text-decoration: underline;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vr {
+    height: 100%;
+    border-left: 2px solid #ccc;
+    margin: 0 20px;
+}
